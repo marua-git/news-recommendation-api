@@ -1,4 +1,4 @@
-# 📰 News Recommendation API
+#  News Recommendation API
 
 > Content-based news recommendation engine built with **FastAPI**, **TF-IDF**, and **Docker**.  
 > Returns personalized recommendations in **< 150ms** at the 95th percentile.
@@ -10,16 +10,16 @@
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
-### Option 1 — Docker (recommended)
+### Option 1 - Docker (recommended)
 
 ```bash
 docker build -t news-api .
 docker run -p 8000:8000 news-api
 ```
 
-### Option 2 — Local
+### Option 2 - Local
 
 ```bash
 pip install -r requirements.txt
@@ -30,7 +30,7 @@ Open **http://localhost:8000/docs** for the interactive API documentation.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 User Query
@@ -50,7 +50,7 @@ JSON Response < 150ms
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -63,7 +63,7 @@ JSON Response < 150ms
 
 ---
 
-## 📋 Example Request
+##  Example Request
 
 ```bash
 curl -X POST "http://localhost:8000/recommend" \
@@ -97,18 +97,18 @@ curl -X POST "http://localhost:8000/recommend" \
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
-1. **Data loading** — Articles indexed from CSV (title + description + content)
-2. **TF-IDF vectorization** — 50,000 features, bigrams, sublinear TF scaling
-3. **Query processing** — User query transformed to same vector space
-4. **Cosine similarity** — Ranked against all articles in O(n) time
-5. **Category filtering** — Optional post-filtering by news category
-6. **Response** — Top-K articles returned as structured JSON
+1. **Data loading** - Articles indexed from CSV (title + description + content)
+2. **TF-IDF vectorization** - 50,000 features, bigrams, sublinear TF scaling
+3. **Query processing** - User query transformed to same vector space
+4. **Cosine similarity** - Ranked against all articles in O(n) time
+5. **Category filtering** - Optional post-filtering by news category
+6. **Response** - Top-K articles returned as structured JSON
 
 ---
 
-## 📊 Performance
+##  Performance
 
 | Metric | Value |
 |--------|-------|
@@ -119,7 +119,7 @@ curl -X POST "http://localhost:8000/recommend" \
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 news-recommendation-api/
@@ -137,7 +137,7 @@ news-recommendation-api/
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 | Variable | Default | Description |
 |----------|---------|-------------|
@@ -147,7 +147,7 @@ news-recommendation-api/
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Marua Makpyr** — ML Engineer  
 [LinkedIn](https://linkedin.com) · [Kaggle](https://kaggle.com/maruamakpyr)
